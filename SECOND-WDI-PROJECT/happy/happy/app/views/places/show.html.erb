@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @place.country %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @place.place %>
+</p>
+
+<p>
+  <strong>Pics:</strong>
+  <% @place.pics.each do |pic| %>
+  <img src="<%= pic.url %>">
+<% end %>
+</p>
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Back', places_path %>
