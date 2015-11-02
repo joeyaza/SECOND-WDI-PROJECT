@@ -2,10 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
     resources :pics do 
       member do 
-        put "like", to: "pics#upvote"
-       
+        put "like", to: "pics#upvote"  
       end
-
   end
 
   resources :places do 
@@ -14,6 +12,8 @@ Rails.application.routes.draw do
       put "dislike", to: "links#downvote"
     end
   end
+
+  resources :comments
 
   root "pages#index"
 
