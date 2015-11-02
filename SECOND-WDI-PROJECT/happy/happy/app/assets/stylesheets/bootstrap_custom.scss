@@ -2,10 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 $navbar-default-bg: #FFE5FF;
-$navbar-default-brand-hover-bg: transparent;
-
-
-
 
 
 @import "bootstrap-sprockets";
@@ -13,11 +9,17 @@ $navbar-default-brand-hover-bg: transparent;
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #E5FFFF;
 }
 
 .navbar-default .navbar-brand {
   font-family: 'Lobster', cursive;
   font-size: 60px;
-  color: #B3D9FF;
+  color: #82D5FF;
+  opacity: 1;
+  padding-right: 30px;
+
 }
+
+
 
