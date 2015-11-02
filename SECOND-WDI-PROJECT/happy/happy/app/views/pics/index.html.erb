@@ -19,10 +19,12 @@
   <%= link_to 'LINK SOMETHING HAPPY!', new_pic_path if user_signed_in? %>
 
 
-    <% @pics.each do |pic| %>
-      <tr>
-       <td><%=image_tag pic.url%></td>
-
+  <% @pics.each do |pic| %>
+  <tr>
+   <td><%=link_to pic do %> 
+     <%=image_tag pic.url%>
+     <% end %>
+   </td>
 
   <!--       <td><%= pic.title %></td>
         <td><%= pic.place.place if pic.place %></td>

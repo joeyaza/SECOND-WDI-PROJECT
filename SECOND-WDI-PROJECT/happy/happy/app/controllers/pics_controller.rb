@@ -1,4 +1,5 @@
 class PicsController < ApplicationController
+  before_filter :set_search
   before_action :set_pic, only: [:show, :edit, :update, :destroy]
 
   before_action :authenticate_user!, except: [:index, :show]
@@ -13,8 +14,8 @@ class PicsController < ApplicationController
       @pics = @q.result(distinct: true)
     else 
       @pics = Pic.all
+    end
   end
-end
 
   # GET /pics/1
   # GET /pics/1.json

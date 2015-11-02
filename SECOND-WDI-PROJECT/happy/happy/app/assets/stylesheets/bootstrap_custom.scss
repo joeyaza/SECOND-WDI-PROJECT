@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 
 $navbar-default-bg: #FFE5FF;
 $navbar-default-brand-hover-bg: transparent;
@@ -13,5 +13,11 @@ $navbar-default-brand-hover-bg: transparent;
 
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  color: #B3D9FF;
 }
 

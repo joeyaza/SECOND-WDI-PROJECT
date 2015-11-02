@@ -4,6 +4,9 @@ class ApplicationController < ActionController::Base
 
    before_action :configure_devise_permitted_parameters, if: :devise_controller?
 
+   def set_search
+     @q=Pic.ransack(params[:q])
+   end
    protected
 
    def configure_devise_permitted_parameters
@@ -19,6 +22,7 @@ class ApplicationController < ActionController::Base
        }
      end
    end
+
 
  end
 
