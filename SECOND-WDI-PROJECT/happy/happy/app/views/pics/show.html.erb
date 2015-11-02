@@ -11,6 +11,10 @@
 </p>
 
 <p>
+<strong></strong>
+<%= @pic.place.place %>
+
+<p>
   <strong></strong>
   <%= @pic.user.username%>
 </p>
@@ -18,6 +22,12 @@
 <p>
   <strong></strong>
   <%= @pic.description %>
+</p>
+
+<p>
+  <strong></strong>
+  <%= link_to "Like me?", like_pic_path(@pic), method: :put %>
+  <%= @pic.score %>
 </p>
 
 <%= link_to 'Edit', edit_pic_path(@pic) %> |

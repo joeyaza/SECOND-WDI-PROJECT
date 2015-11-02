@@ -15,32 +15,32 @@
   <% @place.pics.each do |pic| %>
   <img src="<%= pic.url %>">
   <p><%= pic.description %></p>
-<% end %>
+  <% end %>
 </p>
 <p>
-<strong></strong>
-<%= link_to "Like me?", like_place_path(@place), method: :put %>
-<%= @place.score %>
+  <strong></strong>
+  <%= link_to "Like me?", like_place_path(@place), method: :put %>
+  <%= @place.score %>
 </p>
 
-<h2>Add a happy comment...</h2>
+<h1>Add a happy comment...</h1>
 <%= form_for Comment.new do |f| %>
-  <%= hidden_field_tag "place_id", @place.id %>
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<%= hidden_field_tag "place_id", @place.id %>
+<div class="field">
+  <%= f.label :body %><br />
+  <%= f.text_area :body %>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
 <% end %>
 
 
 <p>
-<strong></strong>
-<%= @place.comment_threads.each do |ct| %>
-    <%= ct.inspect %>
-<% end %>
+  <strong></strong>
+  <%= @place.comment_threads.each do |ct| %>
+  <%= ct %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_place_path(@place) %> |

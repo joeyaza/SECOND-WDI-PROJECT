@@ -5,13 +5,21 @@ class PicsController < ApplicationController
 
   # GET /pics
   # GET /pics.json
+
   def index
-    @pics = Pic.all
+    @q = Pic.ransack(params[:q])
+    if params[:q].present?
+      @q = Pic.ransack(params[:q])
+      @pics = @q.result(distinct: true)
+    else 
+      @pics = Pic.all
   end
+end
 
   # GET /pics/1
   # GET /pics/1.json
   def show
+    @pic = Pic.find(params[:id])
   end
 
   # GET /pics/new
