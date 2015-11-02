@@ -13,15 +13,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <form class="navbar-form navbar-left" role="search">
-       <% if controller_name == "pics" %>
-       <%= search_form_for @q do |f| %>
-       <div class="form-group">
-         <%= f.text_field :title_or_description_cont, :placeholder => "Search", class: "form-control" %>
-       </div>
-       <%= f.submit "Search", class: "btn btn-default" %>
-       <% end %>
-       <% end %>
-     </form>
+     <% if controller_name == "pics" %>
+             <form class="navbar-form navbar-left" role="search">
+               <%= search_form_for @q do |f| %>
+                 <div class="form-group">
+                   <%= f.text_field :title_or_description_cont, :placeholder => "Search", class: "form-control" %>
+                 </div>
+                 <%= f.submit "Search", class: "btn btn-default" %>
+               <% end %>
+             </form>
+           <% end %>
 
      <ul class="nav navbar-nav navbar-right">
       <li><a href= "#"> INSPIRE ME HAPPY..</a></li>
