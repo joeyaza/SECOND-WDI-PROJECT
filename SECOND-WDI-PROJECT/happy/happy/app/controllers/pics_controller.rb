@@ -64,6 +64,11 @@ class PicsController < ApplicationController
     end
   end
 
+  def upvote
+    @pic = Pic.find(params[:id])
+    @pic.upvote_by current_user
+    redirect_to pics_path
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -33,6 +33,7 @@
         <td><% place.pics.each do |pic| %>
           <%= image_tag pic.url %>
           <%= link_to "upvote", like_place_path(place), method: :put %>
+          <%= place.score %>
           <% end %>
         </td>
         <td><%= link_to 'Show', place %></td>
