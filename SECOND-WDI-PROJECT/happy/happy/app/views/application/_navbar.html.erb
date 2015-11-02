@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">h</a>
+      <%= link_to "h", root_path, class: "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,7 +20,7 @@
         <button type="submit" class="btn btn-default">Submit</button> -->
       <!-- </form> -->
 
-      
+
         <div class="form-group">
           <%= search_form_for @q do |f| %>
           <%= f.text_field :title_or_description_cont, :placeholder => "Search", class: "form-control" %>
@@ -29,7 +29,7 @@
         <% end %>
         </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">link me</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
