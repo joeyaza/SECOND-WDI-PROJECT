@@ -1,11 +1,26 @@
 class PlacesController < ApplicationController
   before_action :set_place, only: [:show, :edit, :update, :destroy]
 
+  before_action :authenticate_user!, except: [:index, :show]
+
   # GET /places
   # GET /places.json
+  # def index
+  #   @search = Place.search(params[:q])
+  #   @places = @search.result
+  # end
+
+
+
   def index
-    @places = Place.all
-  end
+     @q = Place.ransack(params[:q])
+     if params[:q].present?
+       @q = Place.ransack(params[:q])
+       @places = @q.result(distinct: true)
+     else
+       @places = Place.all
+     end
+   end
 
   # GET /places/1
   # GET /places/1.json
@@ -69,6 +84,6 @@ class PlacesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def place_params
-      params.require(:place).permit(:country, :place, :pic_id, :user_id, :pic_url)
+      params.require(:place).permit(:country, :place, :pic_id, :user_id, :pic_urls)
     end
 end
