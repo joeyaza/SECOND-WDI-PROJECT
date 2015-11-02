@@ -7,15 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% form_tag items_path do %>
 
 <nav id = "head">
 <div id = "header">
+
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
 <% if user_signed_in? %>
-Oh hello there, good to see you <%=link_to current_user.email, edit_user_registration_path%>
+Oh hello there, good to see you <%=link_to current_user.username, edit_user_registration_path%>
 <%= link_to "log me out", destroy_user_session_path, method: :delete %>
 
 <% else %>

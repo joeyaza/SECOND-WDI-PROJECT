@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Places</h1>
+<h1>Happy Places</h1>
+
+<%= link_to "So, where's made you happy recently..", new_place_path if user_signed_in? %>
 
 <table>
   <thead>
@@ -31,4 +33,3 @@
 
 <br>
 
-<%= link_to 'New Place', new_place_path if user_signed_in? %>

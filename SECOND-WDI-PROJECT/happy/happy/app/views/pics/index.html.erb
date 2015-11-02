@@ -16,7 +16,7 @@
   <tbody>
     <% @pics.each do |pic| %>
       <tr>
-       <td><%= image_tag pic.url, width: 500 %></td>
+       <td><%= image_tag pic.url, width: 500%></td>
         <td><%= pic.title %></td>
         <td><%= pic.place.place if pic.place %></td>
         <td><%= pic.description %></td>
