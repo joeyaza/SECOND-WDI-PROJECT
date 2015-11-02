@@ -11,7 +11,6 @@ class PlacesController < ApplicationController
   # end
 
 
-
   def index
      @q = Place.ransack(params[:q])
      if params[:q].present?
