@@ -9,22 +9,20 @@ $navbar-default-bg: #FFE5FF;
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #E5FFFF;
+  background-color: #E2FFFF;
 }
 
 .navbar-default .navbar-brand {
   font-family: 'Lobster', cursive;
-  font-size: 60px;
+  font-size: 63px;
   color: #82D5FF;
   opacity: 1;
   padding-right: 30px;
 }
 
-// .navbar-right {
-//   margin-top: 12px;
-// }
-// .nav navbar-nav navbar-rightish {
-//   padding-right: 100px;
-// }
+.form-place {
+  position: right;
+
+}
 
 
