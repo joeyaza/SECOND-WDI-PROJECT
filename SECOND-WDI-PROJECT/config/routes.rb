@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   get "/random", to: "places#random_place"
   
-  root "places#index"
+  root "pages#index"
 
   #   resources :pics, only: [:index, :new, :create, :destroy]
   #   root "pics#index"
