@@ -27,6 +27,7 @@
 
      <ul class="nav navbar-nav navbar-left">
       <li><a href= "#"> INSPIRE ME HAPPY..</a></li>
+      <li><%= button_to "BANANA", :random_place=> "someButton" %></li>
       <li><%= link_to "ADD SOMEWHERE HAPPY..", new_place_path if user_signed_in? %></li>
       <li><%= "Sign in to add somewhere happy..." if !user_signed_in? %>
       </li>

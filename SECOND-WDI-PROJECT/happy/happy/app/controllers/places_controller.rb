@@ -89,8 +89,14 @@ class PlacesController < ApplicationController
       @place = Place.find(params[:id])
     end
 
+    def random_place
+      @place = Place.find(rand(Place.count))
+      redirect_to @place
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def place_params
       params.require(:place).permit(:country, :place, :pic_id, :user_id, :pic_urls)
     end
+
 end

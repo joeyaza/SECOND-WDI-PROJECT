@@ -25,7 +25,7 @@
   <%= @place.score %>
 </p>
 
-<h1>Add a happy comment...</h1>
+Add a happy comment...
 <%= form_for Comment.new do |f| %>
 <%= hidden_field_tag "place_id", @place.id %>
 <div class="field">
@@ -46,4 +46,5 @@
 </p>
 
 <%= link_to 'Edit', edit_place_path(@place) %> |
-<%= link_to 'Back', places_path %>
+<%= link_to 'Back', places_path %> |
+<%= link_to 'Delete me?', @place, method: :delete, data: { confirm: 'Are you sure?' } %>
