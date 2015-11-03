@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
 
-$navbar-default-bg: rgb(255, 255, 255);
+$navbar-default-bg: rgb(253, 253, 255);
 
 
 @import "bootstrap-sprockets";
@@ -14,10 +14,11 @@ body {
 
 .navbar-default .navbar-brand {
   font-family: 'Clicker Script', cursive;
-  font-size: 80px;
+  font-size: 90px;
   color: #A1D0FF;
   opacity: 1;
-  padding-right: 30px;
+  padding-top: 21px;
+  
 }
 
 .navbar-default {
