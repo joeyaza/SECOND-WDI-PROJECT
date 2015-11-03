@@ -1,4 +1,4 @@
-/* Header */
+
 .large-header {
 	position: relative;
 	width: 100%;
@@ -6,26 +6,17 @@
 	background: #333;
 	overflow: hidden;
 	background-size: cover;
-	background-position: center center;
+	background-position: center center;]
+	background-size: cover;
 	z-index: 1;
 }
 
-.demo-1 .large-header {
-	background-image: url('../img/demo-1-bg.jpg');
-}
 
 .demo-2 .large-header {
 	background-image: url('http://cdnstatic-2.mydestination.com/library/images/269_1680_948.jpg');
-	width: 100%;
-	height: 100%;
-}
-
-.demo-3 .large-header {
-	background: #7f8c8d;
-}
-
-.demo-4 .large-header {
-	background: #f9f1e9;
+	background-size: cover;
+	min-height: 100%;
+	 min-width: 1024px;
 }
 
 .main-title {
@@ -38,6 +29,7 @@
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
 }
 
 .demo-2 .main-title {
@@ -46,14 +38,15 @@
 	font-size: 8em;
 	padding-left: 10px;
 	text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+	background-size: cover;
 }
 
 .demo-2 .main-title::before {
 	content: '';
 	width: 20vw;
 	height: 20vw;
-	min-width: 3.5em;
-	min-height: 3.5em;
+	min-height: 100%;
+	 min-width: 1024px;
 	background: url() no-repeat center center;
 	background-size: cover;
 	position: absolute;
@@ -65,20 +58,7 @@
 	transform: translate3d(-50%,-50%,0);
 }
 
-.demo-3 .main-title {
-	padding: 10px 40px;
-	border: 10px double #f9f1e9;
-	text-transform: uppercase;
-	font-family: Londrina Outline, sans-serif;
-}
 
-.demo-4 .main-title {
-	font-size: 6em;
-	font-weight: 300;
-	padding: 10px 30px;
-	text-transform: uppercase;
-	color: #222;
-}
 
 .main-title .thin {
 	font-weight: 200;
@@ -93,5 +73,6 @@
 
 	.demo-2 .main-title {
 		font-size: 4em;
+		background-size: cover;
 	}
 }
