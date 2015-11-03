@@ -31,6 +31,7 @@
         <td><%= place.place %></td>
         <td><% place.pics.each do |pic| %>
           <%= image_tag pic.url %>
+         <%= image_tag pic.image.url %>
           <% end %>
         </td>
         <td><%= link_to 'Show', place %></td>

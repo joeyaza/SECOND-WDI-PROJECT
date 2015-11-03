@@ -1,13 +1,5 @@
 <h1>New Pic</h1>
 
-<div class="well">
-  <%= form_for @pic, html: { multipart: true } do |f| %>
-    <%= f.text_field :place %>
-    <%= f.label :attachment %>
-    <%= f.file_field :attachment %>
-    <%= f.submit "Save", class: "btn btn-primary" %>
-  <% end %>
-</div>
 
 <%= render 'form' %>
 
