@@ -37,6 +37,11 @@ class PicsController < ApplicationController
   def create
     @pic = current_user.pics.new(pic_params)
 
+    # if @pic.save
+    #      redirect_to pics_path, notice: "The pic has been uploaded."
+    #    else
+    #      render "new"
+    #    end
     respond_to do |format|
       if @pic.save
         format.html { redirect_to @pic, notice: 'Pic was successfully created.' }

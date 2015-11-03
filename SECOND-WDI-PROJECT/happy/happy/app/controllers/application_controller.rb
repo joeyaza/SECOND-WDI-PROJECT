@@ -3,10 +3,12 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
 
    before_action :configure_devise_permitted_parameters, if: :devise_controller?
+   before_filter :set_search
 
    def set_search
-     @q=Pic.ransack(params[:q])
+     @q=Place.ransack(params[:q])
    end
+
    protected
 
    def configure_devise_permitted_parameters

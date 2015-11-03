@@ -55,6 +55,11 @@ GEM
       sass (>= 3.3.0)
     builder (3.2.2)
     byebug (6.0.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -87,6 +92,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    masonry-rails (0.2.4)
+      railties
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.2)
@@ -177,10 +184,12 @@ DEPENDENCIES
   acts_as_votable
   bootstrap-sass (~> 3.3.5)
   byebug
+  carrierwave (= 0.10.0)
   coffee-rails (~> 4.1.0)
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  masonry-rails (~> 0.2.1)
   rails (= 4.2.4)
   ransack
   sass-rails (~> 5.0)

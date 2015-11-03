@@ -1,41 +1,21 @@
 <p id="notice"><%= notice %></p>
-
-<h1></h1>
-
-
 <table>
-  <thead>
-<!--     <tr>
-      <th>Url</th>
-      <th>Title</th>
-      <th>User</th>
-      <th>Description</th>
-      <th colspan="3"></th> -->
-    </tr>
-  </thead>
-
-  <tbody>
-
+ 
   <%= link_to 'LINK SOMETHING HAPPY!', new_pic_path if user_signed_in? %>
 
+  <div id='pics', transitions-enabled>
 
   <% @pics.each do |pic| %>
-  <tr>
+
    <td><%=link_to pic do %> 
      <%=image_tag pic.url%>
      <% end %>
    </td>
-<!-- 
-<td><%= pic.title %></td>
-        <td><%= pic.place.place if pic.place %></td>
-        <td><%= pic.description %></td>
-        <td><%= link_to 'Show', pic %></td>
-        <td><%= link_to 'Edit', edit_pic_path(pic) %></td>
-<td><%= link_to 'Destroy', pic, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  
+<% end %>
 
+
+
+ </div>
 <br>
 

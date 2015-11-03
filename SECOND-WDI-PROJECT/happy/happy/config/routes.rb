@@ -15,7 +15,12 @@ Rails.application.routes.draw do
 
   resources :comments
 
-  root "pics#index"
+
+  root "places#index"
+
+  #   resources :pics, only: [:index, :new, :create, :destroy]
+  #   root "pics#index"
+  # end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

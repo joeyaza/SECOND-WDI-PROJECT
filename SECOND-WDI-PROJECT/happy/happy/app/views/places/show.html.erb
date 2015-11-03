@@ -15,6 +15,7 @@
   <% @place.pics.each do |pic| %>
   <img src="<%= pic.url %>">
   <p><%= pic.description %></p>
+  <p>Posted by <%= pic.user.username %></p>
   <% end %>
 </p>
 <p>

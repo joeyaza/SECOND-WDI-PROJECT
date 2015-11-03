@@ -14,28 +14,30 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
    
-       <% if controller_name == "pics" %>
+       <% if controller_name == "places" %>
        <form class="navbar-form navbar-left" role="search">
          <%= search_form_for @q do |f| %>
          <div class="form-group">
-           <%= f.text_field :title_or_description_cont, :placeholder => "Search", class: "form-control" %>
+           <%= f.text_field :country_or_place_cont, :placeholder => "Search", class: "form-control" %>
          </div>
          <%= f.submit "Search Me", class: "btn btn-default" %>
          <% end %>
        </form>
        <% end %>
 
-     <ul class="nav navbar-nav navbar-righter">
+     <ul class="nav navbar-nav navbar-left">
       <li><a href= "#"> INSPIRE ME HAPPY..</a></li>
+      <li><a href= "#"> ADD SOMEWHERE HAPPY..</a></li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-rightish">
-      <% if user_signed_in? %>
-      Oh hello there, good to see you <%=link_to current_user.username, edit_user_registration_path%>
-      <%= link_to "log me out", destroy_user_session_path, method: :delete %>
-      </ul>
-      <% else %>
       <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+
+      <li><!-- Oh hello there, good to see you --> <%=link_to current_user.username, edit_user_registration_path%></li>
+      <li><%= link_to "log me out", destroy_user_session_path, method: :delete %></li>
+      <!-- </ul> -->
+      <% else %>
+      <!-- <ul class="nav navbar-nav navbar-right"> -->
         <li><%= link_to "log me in", new_user_session_path%></li>
         <li><%= link_to "sign me up", new_user_registration_path %></li>
       <% end %>
