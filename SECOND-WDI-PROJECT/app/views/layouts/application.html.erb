@@ -8,15 +8,25 @@
 </head>
 <body>
 
-<%=render "navbar" %>
+<div>
 
-<div class="container" style="margin-top:-20px;">
+<% if controller.controller_name != "pages" %>
+  <%= render "navbar" %>
+<% end %>
+</div>
+
+
+
+
+
+<!-- 
+<div class="container" style="margin-top:-20px;"> -->
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
 
 <%= yield %>
-</div>
+<!-- </div> -->
 </body>
 </html>

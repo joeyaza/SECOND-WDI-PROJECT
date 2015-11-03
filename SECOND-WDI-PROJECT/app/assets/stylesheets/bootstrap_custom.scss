@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
 
-$navbar-default-bg: #FFE5FF;
+$navbar-default-bg: rgb(255, 255, 255);
 
 
 @import "bootstrap-sprockets";
@@ -9,20 +9,22 @@ $navbar-default-bg: #FFE5FF;
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(250, 250, 255);
+  background-color: rgb(251, 251, 255);
 }
 
 .navbar-default .navbar-brand {
-  font-family: 'Lobster', cursive;
-  font-size: 63px;
+  font-family: 'Clicker Script', cursive;
+  font-size: 80px;
   color: #A1D0FF;
   opacity: 1;
   padding-right: 30px;
 }
 
-.form-place {
-  position: right;
-
+.navbar-default {
+  height: 60px;
+  font-size: 17px;
 }
 
-
+.form-place {
+  position: right;
+}
