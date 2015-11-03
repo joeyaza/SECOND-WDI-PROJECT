@@ -30,6 +30,7 @@ class PlacesController < ApplicationController
   # GET /places/new
   def new
     @place = Place.new
+    @pic = Pic.new
   end
 
   # GET /places/1/edit

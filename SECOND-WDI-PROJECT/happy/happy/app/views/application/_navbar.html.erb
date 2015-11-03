@@ -27,7 +27,7 @@
 
      <ul class="nav navbar-nav navbar-left">
       <li><a href= "#"> INSPIRE ME HAPPY..</a></li>
-      <li><a href= "#"> ADD SOMEWHERE HAPPY..</a></li>
+      <li><%= link_to "ADD SOMEWHERE HAPPY..", new_place_path if user_signed_in? %></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
