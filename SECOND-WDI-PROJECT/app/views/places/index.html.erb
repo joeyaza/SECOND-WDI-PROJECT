@@ -1,26 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<table>
-
-
-  <tbody>
-    <% @places.each do |place| %>
-      <tr>
- <!--        <td><%= place.country %></td>
-        <td><%= place.place %></td> -->
-        <% place.pics.each do |pic| %>
-          <td><%= link_to image_tag(pic.url), place %></td>
-          <td><%= link_to image_tag(pic.image.url), place %></td>
-          <% end %>
-<!--         
-        <td><%= link_to 'Show', place %></td>
-
-        <td><%= link_to 'Edit', edit_place_path(place) %></td>
-        <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<div id ="pins" class="transistions-enabled">
+  <p id="notice"><%= notice %></p>
+  <% @places.each do |place| %>
+  <div class="box panel panel-default">
+    <div class="panel-body">
+      <% place.pics.each do |pic| %>
+      <%= link_to image_tag(pic.url), place %>
+      <%= link_to image_tag(pic.image.url), place %>
+      <% end %>
+    </div>
+  </div>
+  <% end %>
+</div>
 

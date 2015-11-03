@@ -15,7 +15,8 @@ Rails.application.routes.draw do
 
   resources :comments
 
-
+  get "/random", to: "places#random_place"
+  
   root "places#index"
 
   #   resources :pics, only: [:index, :new, :create, :destroy]
