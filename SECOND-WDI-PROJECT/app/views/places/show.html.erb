@@ -38,10 +38,12 @@ Add a happy comment...
 <% end %>
 
 
+
 <p>
-  <strong></strong>
-  <%= @place.comment_threads.each do |ct| %>
-  <%= ct %>
+  <strong>COMMENTS</strong>
+  <% @place.comment_threads.each do |ct| %>
+  <h4><%= ct.user.username %></h4>
+  <p><%= ct.body %></p>
   <% end %>
 </p>
 
