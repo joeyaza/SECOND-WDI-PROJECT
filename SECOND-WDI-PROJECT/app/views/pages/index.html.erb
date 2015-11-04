@@ -11,7 +11,7 @@
                 <div class="content">
                     <div id="large-header" class="large-header">
                         <canvas id="demo-canvas"></canvas>
-                      <!--   <h2 class="intro"><span>hello, hello, welcome. Come in why dont you ? Lets be</span></h2> -->
+                        <!--   <h2 class="intro"><span>hello, hello, welcome. Come in why dont you ? Lets be</span></h2> -->
 
                         <h1 class="main-title"><span>happy</span></h1>
 
@@ -19,19 +19,19 @@
                         <%= link_to "ha", places_path, class: "navbar-brand" %>
 
                         <h2 class="come-in">
-                        <% if user_signed_in?%>
-                        <%= link_to "come in why dont you..", places_path %>
+                            <% if user_signed_in?%>
+                            <%= link_to "come in why dont you..", places_path %>
                         </h2>
                         <% else %>
                         <h2 class="sign-in-sign-up">
-                        <%= link_to "log me in", new_user_session_path%>
-                        ||
-                        <%= link_to "sign me up", new_user_registration_path %></h2>
-                        <% end %>
+                            <%= link_to "log me in", new_user_session_path%>
+                            ||
+                            <%= link_to "sign me up", new_user_registration_path %></h2>
+                            <% end %>
 
 
 
+                        </div>
                     </div>
-                </div>
-            </body>
-            </html>
+                </body>
+                </html>

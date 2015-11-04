@@ -17,7 +17,7 @@
        <form class="navbar-form navbar-left" role="search">
          <%= search_form_for @q do |f| %>
          <div class="form-group">
-           <%= f.text_field :country_or_place_cont, :placeholder => "Search", class: "form-control" %>
+           <%= f.text_field :country_or_place_cont, :placeholder => "Place", class: "form-control" %>
          </div>
          <%= f.submit "Search Me", class: "btn btn-default" %>
          <% end %>

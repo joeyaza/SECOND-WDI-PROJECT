@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
 
-$navbar-default-bg: #E5E5FF;
+$navbar-default-bg: #FFFFFF;
 
 
 @import "bootstrap-sprockets";
@@ -9,16 +9,18 @@ $navbar-default-bg: #E5E5FF;
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(252, 252, 255);
+  background-color: black;
 }
 
 .navbar-default .navbar-brand {
   font-family: 'Clicker Script', cursive;
+  // font-family: 'Open Sans', sans-serif;
   font-size: 90px;
-  color: #FFFFFF;
-  opacity: 1;
+  color: #576490;
+  opacity: 0.6;
   padding-top: 21px;
-  text-shadow: 3px 3px 3px rgba(0,0,100,0.4);
+  text-shadow: 1px 1px 1px rgba(0,0,100,0.4);
+  opacity: 1;
   
 }
 

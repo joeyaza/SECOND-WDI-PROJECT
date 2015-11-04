@@ -1,50 +1,58 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+  <div class= "places-show">
+  <h1>
+    <strong></strong>
+    <%= @place.country %>
+  </h1>
 
-<p>
-  <strong></strong>
-  <%= @place.country %>
-</p>
+  <h2>
+    <strong></strong>
+    <%= @place.place %>
+  </h2>
 
-<p>
-  <strong></strong>
-  <%= @place.place %>
-</p>
+  <p>
+    <strong></strong>
+    <% @place.pics.each do |pic| %>
+    <div class="box_big panel panel-default">
+    <div class="panel-body">
+    <%=link_to image_tag(pic.url), pic%>
+  <!--   <img src="<#%= pic.url %>"> -->
+    <%= image_tag pic.image.url %>
+    </div>
+    </div>
+    <h4><%= pic.description %></h4>
+    <p>Posted by <%= pic.user.username %></p>
+    <% end %>
+  </p>
+  <p>
+    <strong></strong>
+    <%= link_to "Like me?", like_place_path(@place), method: :put %>
+    <%= @place.score %>
+  </p>
 
-<p>
-  <strong></strong>
-  <% @place.pics.each do |pic| %>
-  <img src="<%= pic.url %>">
-  <%= image_tag pic.image.url %>
-  <p><%= pic.description %></p>
-  <p>Posted by <%= pic.user.username %></p>
+
+  <%= form_for Comment.new do |f| %>
+  <%= hidden_field_tag "place_id", @place.id %>
+  <div class="field">
+
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
   <% end %>
-</p>
-<p>
-  <strong></strong>
-  <%= link_to "Like me?", like_place_path(@place), method: :put %>
-  <%= @place.score %>
-</p>
 
-Add a happy comment...
-<%= form_for Comment.new do |f| %>
-<%= hidden_field_tag "place_id", @place.id %>
-<div class="field">
-  <%= f.label :body %><br />
-  <%= f.text_area :body %>
+  <p>
+    <strong></strong>
+    <% @place.comment_threads.each do |ct| %>
+    <h4><%= ct.user.username %></h4>
+    <p><%= ct.body %></p>
+    <% end %>
+  </p>
+
+  <%= link_to 'Edit', edit_place_path(@place) %> |
+  <%= link_to 'Back', places_path %> |
+  <%= link_to 'Delete me?', @place, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
 </div>
-<div class="actions">
-  <%= f.submit %>
-</div>
-<% end %>
-
-<p>
-  <strong>COMMENTS</strong>
-  <% @place.comment_threads.each do |ct| %>
-  <h4><%= ct.user.username %></h4>
-  <p><%= ct.body %></p>
-  <% end %>
-</p>
-
-<%= link_to 'Edit', edit_place_path(@place) %> |
-<%= link_to 'Back', places_path %> |
-<%= link_to 'Delete me?', @place, method: :delete, data: { confirm: 'Are you sure?' } %>
