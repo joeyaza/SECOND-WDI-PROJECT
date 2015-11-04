@@ -1,3 +1,7 @@
+a, a:hover, a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
 
 .large-header {
 	position: relative;
@@ -13,7 +17,7 @@
 
 
 .demo-2 .large-header {
-	background-image: url('http://cdnstatic-2.mydestination.com/library/images/269_1680_948.jpg');
+	background-image: url('http://theartmad.com/wp-content/uploads/2015/04/Forest-Pathway-Wallpaper-3.jpg');
 	background-size: cover;
 	min-height: 100%;
 	min-width: 100vw;
@@ -23,22 +27,76 @@
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	color: #f9f1e9;
+	color: #FFFFFF;
 	text-align: center;
-	top: 50%;
+	top: 44%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 	background-size: cover;
 }
 
+.come-in {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	text-align: center;
+	top: 55%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+}
+
+.sign-in-sign-up {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 56%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+	font-size: 23px;
+
+}
+
+/*.intro {
+	position: absolute;
+	font-family: 'Clicker Script', cursive;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+	font-size: 40px;
+}*/
+
 .demo-2 .main-title {
 	font-family: 'Clicker Script', cursive;
 	font-weight: normal;
 	font-size: 8em;
 	padding-left: 10px;
-	text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+	text-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 	background-size: cover;
+	font: FFFFFF;
+}
+
+.demo-2 .come-in{
+	font-family: 'Clicker Script', cursive;
+	font-weight: normal;
+	font-size: 4em;
+	padding-left: 10px;
+	text-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	background-size: cover;
+	font: FFFFFF;
 }
 
 .demo-2 .main-title::before {

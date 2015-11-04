@@ -7,7 +7,7 @@ $(function(){
     })
       
     $('.hover').mouseover(function() {
-      $('.text').css("visibility","visible");
+      $(this).children('.text').css("visibility","visible");
     });
 
     $('.hover').mouseout(function() {
@@ -16,4 +16,3 @@ $(function(){
   })
     
 }) 
-  
