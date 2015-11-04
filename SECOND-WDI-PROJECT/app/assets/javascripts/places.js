@@ -11,7 +11,7 @@ $(function(){
     });
 
     $('.hover').mouseout(function() {
-      $('.text').css("visibility","hidden");
+      $(this).children('.text').css("visibility","hidden");
     });
   })
     
