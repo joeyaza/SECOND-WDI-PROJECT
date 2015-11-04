@@ -17,7 +17,7 @@ a, a:hover, a:active {
 
 
 .demo-2 .large-header {
-	background-image: url('http://theartmad.com/wp-content/uploads/2015/04/Forest-Pathway-Wallpaper-3.jpg');
+	background-image: url('https://sittayubie.files.wordpress.com/2014/07/forest-fog-wide-wallpaper-338155.jpg');
 	background-size: cover;
 	min-height: 100%;
 	min-width: 100vw;
@@ -84,7 +84,7 @@ a, a:hover, a:active {
 	font-weight: normal;
 	font-size: 8em;
 	padding-left: 10px;
-	text-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	text-shadow: 15px 15px 15px rgba(0,0,0,1);
 	background-size: cover;
 	font: FFFFFF;
 }
