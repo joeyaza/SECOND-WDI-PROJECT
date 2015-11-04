@@ -8,8 +8,11 @@
           <p class="text"><%= place.place%></p>
           <div class="panel-body">
             <% place.pics.each do |pic| %>
-              <%= link_to image_tag(pic.url), place%>
-              <%= link_to image_tag(pic.image.url), place %>
+               <% if !pic.url.blank? %>
+                <%=link_to image_tag(pic.url), place%>
+              <% elsif !pic.image.url.blank? %>
+                <%= link_to image_tag(pic.image.url), place %>
+              <% end %>
             <% end %>
           </div>
         </div>
