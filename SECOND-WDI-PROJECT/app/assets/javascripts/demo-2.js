@@ -15,8 +15,10 @@ function homeFunction() {
         largeHeader.style.height = height+'px';
 
         canvas = document.getElementById('demo-canvas');
-        canvas.width = width;
-        canvas.height = height;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        canvasW = canvas.width;
+        canvasH = canvas.height;
         ctx = canvas.getContext('2d');
 
         // create particles

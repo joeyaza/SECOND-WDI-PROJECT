@@ -16,7 +16,7 @@
 	background-image: url('http://cdnstatic-2.mydestination.com/library/images/269_1680_948.jpg');
 	background-size: cover;
 	min-height: 100%;
-	 min-width: 1024px;
+	min-width: 100vw;
 }
 
 .main-title {
