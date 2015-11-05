@@ -1,3 +1,5 @@
+_________________________________________________________________________________
+
 <%= form_for(@pic, :html => { :class => "form-inline"} ) do |f| %>
   <% if @pic.errors.any? %>
     <div id="error_explanation">
@@ -15,19 +17,22 @@
     <%= f.label :url %><br>
     <%= f.text_area :url, class: "form-control"  %>
   </div>
-  <div class="form-group">
-    <%= f.label :image %><br>
-    <%= f.file_field :image%>
-  </div>
+
  <div class="form-group">
     <%= f.label :place %><br>
-    <%=  f.collection_select(:place_id, Place.all, :id, :place ) %>
+    <%=  f.collection_select(:place_id, Place.all, :id, :place )%>
   </div>
  <div class="form-group">
     <%= f.label :description %><br>
     <%= f.text_area :description,  class: "form-control"  %>
   </div>
-
+  </br>
+  <div class="form-group">
+    <%= f.label :image %><br>
+    <%= f.file_field :image%>
+  </div>
+</br>
+</br>
   <div class="actions">
     <%= f.submit class: "btn btn-default" %>
   </div>
