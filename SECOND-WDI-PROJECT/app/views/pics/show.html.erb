@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <div class="container">
 <p>
 <strong></strong>
@@ -9,10 +8,10 @@
 <p>
   <strong></strong>
   <%= @pic.title %>
-</p>§
+</p>
 
 
-<p>
+<!-- <p>
   <strong></strong>
   <%= @pic.user.username%>
 </p>
@@ -26,11 +25,11 @@
   <strong></strong>
   <%= link_to "Like me?", like_pic_path(@pic), method: :put %>
   <%= @pic.score %>
-</p>
+</p> -->
 
 <%= link_to 'Edit', edit_pic_path(@pic) %> |
 
-<%= link_to 'Destroy', @pic, method: :delete, data: { confirm: 'Are you sure?' } %>  |
+<%= link_to 'Delete Me?', @pic, method: :delete, data: { confirm: 'Are you sure?' } %>  |
 
 
 <%= link_to 'Back', pics_path %>
