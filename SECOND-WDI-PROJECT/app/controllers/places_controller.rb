@@ -84,9 +84,9 @@ class PlacesController < ApplicationController
   end
 
   def random_place
-    @places = Place.all
-    @randomplace = @places.sample
-    redirect_to(@randomplace)
+    @places = Place.all #ONLY REFERS TO PLACES THAT EXIST AS LOOKS IN DATABASE NOT URLS ETC 
+    @randomplace = @places.sample #DEFINES NEW VAR WITH 1 SAMPLE FROM ALL PLACES
+    redirect_to(@randomplace) # THEN REDIRECTS US TO THAT 1 RANDOMPLACE
   end
 
   private
