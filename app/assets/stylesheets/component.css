@@ -41,18 +41,6 @@ pre {
   font-size: 11px;
 }
 
-/*a {
-  color: #000;
-
-  &:visited {
-    color: black;
-  }
-
-  &:hover {
-    color: #fff;
-    /*background-color: #000;*/
-  }
-}*/
 
 div {
   &.field, &.actions {
