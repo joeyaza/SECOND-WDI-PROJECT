@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151103102902) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: :cascade do |t|
     t.integer  "commentable_id"
     t.string   "commentable_type"
@@ -27,8 +30,8 @@ ActiveRecord::Schema.define(version: 20151103102902) do
     t.datetime "updated_at"
   end
 
-  add_index "comments", ["commentable_id", "commentable_type"], name: "index_comments_on_commentable_id_and_commentable_type"
-  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
+  add_index "comments", ["commentable_id", "commentable_type"], name: "index_comments_on_commentable_id_and_commentable_type", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "pics", force: :cascade do |t|
     t.text     "url"
@@ -41,7 +44,7 @@ ActiveRecord::Schema.define(version: 20151103102902) do
     t.string   "image"
   end
 
-  add_index "pics", ["user_id"], name: "index_pics_on_user_id"
+  add_index "pics", ["user_id"], name: "index_pics_on_user_id", using: :btree
 
   create_table "places", force: :cascade do |t|
     t.string   "country"
@@ -51,7 +54,7 @@ ActiveRecord::Schema.define(version: 20151103102902) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "places", ["pic_id"], name: "index_places_on_pic_id"
+  add_index "places", ["pic_id"], name: "index_places_on_pic_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
@@ -70,8 +73,8 @@ ActiveRecord::Schema.define(version: 20151103102902) do
     t.string   "last_sign_in_ip"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "votes", force: :cascade do |t|
     t.integer  "votable_id"
@@ -85,7 +88,9 @@ ActiveRecord::Schema.define(version: 20151103102902) do
     t.datetime "updated_at"
   end
 
-  add_index "votes", ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope"
-  add_index "votes", ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
+  add_index "votes", ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
+  add_index "votes", ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
 
+  add_foreign_key "pics", "users"
+  add_foreign_key "places", "pics"
 end
