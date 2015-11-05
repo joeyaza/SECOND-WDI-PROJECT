@@ -80,7 +80,7 @@ class PlacesController < ApplicationController
   def upvote
     @place = Place.find(params[:id])
     @place.upvote_by current_user
-    redirect_to places_path
+    redirect_to place_path
   end
 
   def random_place
