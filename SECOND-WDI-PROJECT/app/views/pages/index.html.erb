@@ -19,10 +19,11 @@
                         <%= link_to "ha", places_path, class: "navbar-brand" %>
 
                         <h2 class="come-in">
-                            <% if user_signed_in?%>
+                        
                             <%= link_to "come in why dont you..", places_path %>
                         </h2>
-                        <% else %>
+                        <% if !user_signed_in?%>
+                
                         <h2 class="sign-in-sign-up">
                             <%= link_to "log me in", new_user_session_path%>
                             ||
