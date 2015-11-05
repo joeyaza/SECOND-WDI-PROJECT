@@ -1,0 +1,228 @@
+.come-in {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+	top: 55%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+}
+
+a, a:active {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color:white;
+	text-decoration: none;
+}
+
+body {
+  background-color: #E3F1F4;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+.large-header {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;]
+	background-size: cover;
+	z-index: 1;
+}
+
+
+.demo-2 .large-header {
+	background-image: url('http://www.wall321.com/thumbnails/detail/20120409/landscapes%20nature%20trees%20forest%20sunlight%20rivers%201920x1200%20wallpaper_www.wallpaperto.com_34.jpg');
+	background-size: cover;
+	min-height: 100%;
+	min-width: 100vw;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	text-align: center;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+}
+
+.come-in {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+}
+
+.sign-in-sign-up {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 58%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+	font-size: 23px;
+
+}
+
+/*.intro {
+	position: absolute;
+	font-family: 'Clicker Script', cursive;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	background-size: cover;
+	font-size: 40px;
+}*/
+
+.demo-2 .main-title {
+	font-family: 'Clicker Script', cursive;
+	font-weight: normal;
+	font-size: 8em;
+	padding-left: 10px;
+	text-shadow: 15px 15px 15px rgba(0,0,0,1);
+	background-size: cover;
+	font: FFFFFF;
+}
+
+.demo-2 .come-in{
+	font-family: 'Clicker Script', cursive;
+	font-weight: normal;
+	font-size: 4em;
+	padding-left: 10px;
+	text-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	background-size: cover;
+	font: FFFFFF;
+}
+
+.demo-2 .main-title::before {
+	content: '';
+	width: 20vw;
+	height: 20vw;
+	min-height: 100%;
+	 min-width: 1024px;
+	background: url() no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title, 
+	.demo-3 .main-title,
+	.demo-4 .main-title {
+		font-size: 3em;
+	}
+
+	.demo-2 .main-title {
+		font-size: 4em;
+		background-size: cover;
+	}
+}
+

@@ -1,2 +1,0 @@
-# SECOND-WDI-PROJECT
-H A P P Y 

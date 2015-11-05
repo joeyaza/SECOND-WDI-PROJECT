@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+
+$navbar-default-bg: #FFFFFF;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Clicker Script', cursive;
+  // font-family: 'Open Sans', sans-serif;
+  font-size: 90px;
+  color: #576490;
+  opacity: 0.6;
+  padding-top: 21px;
+  text-shadow: 1px 1px 1px rgba(0,0,100,0.4);
+  opacity: 1;
+  
+}
+
+.navbar-default {
+  height: 60px;
+  font-size: 17px;
+}
+
+.form-place {
+  position: right;
+}
+#form-group {
+
+  display: inline;
+    vertical-align: middle;
+}
+
+// .inline-left {
+//   display: inline;
+//   float: left;
+// }
+
+// .input[type=:file] {
+//   display: block;
+//   width: 190px
+// }
+

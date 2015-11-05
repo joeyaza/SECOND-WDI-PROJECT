@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "ha", places_path, class: "navbar-brand" %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+       <% if controller_name == "places" %>
+       <form class="navbar-form navbar-left" role="search">
+         <%= search_form_for @q do |f| %>
+         <div class="form-group">
+           <%= f.text_field :country_or_place_cont, :placeholder => "Place", class: "form-control" %>
+         </div>
+         <%= f.submit "Search Me", class: "btn btn-default" %>
+         <% end %>
+       </form>
+       <% end %>
+
+     <ul class="nav navbar-nav navbar-left">
+      <li><%= link_to "INSPIRE ME HAPPY..", random_path %></li>
+      <li><%= link_to "ADD SOMEWHERE HAPPY..", new_place_path if user_signed_in? %></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+
+      <li><!-- Oh hello there, good to see you --> <%=link_to current_user.username, edit_user_registration_path%></li>
+      <li><%= link_to "log me out", destroy_user_session_path, method: :delete %></li>
+      <!-- </ul> -->
+      <% else %>
+      <!-- <ul class="nav navbar-nav navbar-right"> -->
+        <li><%= link_to "log me in", new_user_session_path%></li>
+        <li><%= link_to "sign me up", new_user_registration_path %></li>
+      <% end %>
+      </ul>
+
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>

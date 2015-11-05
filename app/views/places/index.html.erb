@@ -1,0 +1,22 @@
+<div id ="pins" class="transitions-enabled">
+  <p id="notice"><%= notice %></p>
+  
+  
+    <% @places.each do |place| %>
+      <div class="box panel panel-default">
+        <div class="hover">
+          <p class="text"><%= place.place%></p>
+          <div class="panel-body">
+            <% place.pics.each do |pic| %>
+               <% if !pic.url.blank? %>
+                <%=link_to image_tag(pic.url), place%>
+              <% elsif !pic.image.url.blank? %>
+                <%= link_to image_tag(pic.image.url), place %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>​

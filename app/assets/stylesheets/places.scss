@@ -1,0 +1,65 @@
+// Place all the styles related to the Places controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#pins {
+  margin: 0 auto;
+  width:100%;
+
+  .box {
+    margin: 5px;
+    width: 420px;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      .text {
+        display: block;
+      }
+    }
+
+    .text{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 40px;
+      opacity: 0.8;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      display: none;
+      line-height: 0.8em;
+      font-weight: bold;
+      text-shadow: 0 0 5px black;
+    }
+  }
+}
+
+#wrapper p {
+  position:relative;
+  visibility:hidden;
+}
+
+#container {
+  width: 100%;
+}
+
+.places-show {
+
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.box_big {
+  width: 820px;
+  img {
+    width: 100%;
+  }
+}
+
