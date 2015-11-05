@@ -14,3 +14,8 @@ the app was made using Ruby on Rails
 styling was done using CSS and SASS
 Animations were done using Javascript / Jquery
 Version Control was implemented using Git/ Git Hub.
+hosting was utilized using Heroku
+
+please see the deployed site at
+
+https://happytravels.herokuapp.com/
