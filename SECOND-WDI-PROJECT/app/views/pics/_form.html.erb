@@ -1,5 +1,3 @@
-_________________________________________________________________________________
-
 <%= form_for(@pic, :html => { :class => "form-inline"} ) do |f| %>
   <% if @pic.errors.any? %>
     <div id="error_explanation">
@@ -20,7 +18,7 @@ ________________________________________________________________________________
 
  <div class="form-group">
     <%= f.label :place %><br>
-    <%=  f.collection_select(:place_id, Place.all, :id, :place )%>
+    <%=  f.collection_select :place_id, Place.all, :id, :place, {}, class: "form-control"%>
   </div>
  <div class="form-group">
     <%= f.label :description %><br>
