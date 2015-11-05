@@ -27,7 +27,7 @@
   margin: 10px;
  }*/
 
- .container {
+ .container2 {
    text-align:center;
  }
 
@@ -42,4 +42,8 @@
 
  .area input {
   margin: 20px;
+ }
+
+ #pic_image {
+  width: 190px;
  }
