@@ -71,9 +71,8 @@ class PicsController < ApplicationController
   # DELETE /pics/1.json
   def destroy
     current_user.pics.find(params[:id]).destroy
-    @pic.destroy
     respond_to do |format|
-      format.html { redirect_to pics_url, notice: 'Pic was successfully destroyed.' }
+      format.html { redirect_to places_url, notice: 'Pic was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

@@ -6,33 +6,43 @@
 #pins {
   margin: 0 auto;
   width:100%;
-}
 
-.box {
-  margin: 5px;
-  width: 420px;
-}
+  .box {
+    margin: 5px;
+    width: 420px;
 
+    img {
+      width: 100%;
+    }
 
-.text{
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 40px;
-  opacity: 0.57;
-  color: black;
-  font-family: 'Open Sans', sans-serif;
+    &:hover {
+      .text {
+        display: block;
+      }
+    }
 
-}
-
-.box img {
-  width: 100%;
+    .text{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 40px;
+      opacity: 0.8;
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+      display: none;
+      line-height: 0.8em;
+      font-weight: bold;
+      text-shadow: 0 0 5px #fff;
+    }
+  }
 }
 
 #wrapper p {
-position:relative;
-visibility:hidden;
+  position:relative;
+  visibility:hidden;
 }
 
 #container {
@@ -47,10 +57,8 @@ visibility:hidden;
 
 
 .box_big {
-
   width: 820px;
-}
-
-.box_big img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
