@@ -1,4 +1,5 @@
 # SECOND-WDI-PROJECT
+
 H A P P Y 
 
 
@@ -10,11 +11,28 @@ the layout has somewhat adopted from Pinterest and gives users the opportunity t
 
 the idea is not to upload many pictures, as for instance facebook but to upload a single snap shot of your experience somewhere.
 
+User Stories
+------------
+
+user will be able to sign up/ sign in
+user will be able to search for places/pictures
+user will be able to upload pictures
+user will be able to be 'inspired', ie find a random holiday destination
+
+<br>
+
+
+
 the app was made using Ruby on Rails
+<br>
 styling was done using CSS and SASS
+<br>
 Animations were done using Javascript / Jquery
+<br>
 Version Control was implemented using Git/ Git Hub.
+<br>
 hosting was utilized using Heroku
+<br>
 
 please see the deployed site at
 
