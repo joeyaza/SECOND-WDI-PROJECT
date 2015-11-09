@@ -21,7 +21,30 @@ user will be able to be 'inspired', ie find a random holiday destination
 
 <br>
 
-please see screenshoots hosted at http://imgur.com/a/njHsU
+please see screenshots
+
+![alt tag](http://imgur.com/2YrV4GZ)</br>
+![alt tag](http://imgur.com/OdvWdE9)</br>
+![alt tag](http://imgur.com/AGJr5Cz)</br>
+
+i used the following speciality gems 
+
+'devise' for user authentication
+
+'ransack' for searchability
+
+'acts_as_votable' for likes
+
+'acts_as_commentable_with_threading' for user comments
+
+'bootstrap-sass', '~> 3.3.5' for styling framework
+
+'masonry-rails', '~> 0.2.1' for animations
+
+'carrierwave', '0.10.0'
+'rmagick'
+'fog', '1.29.0'
+for hosting images
 
 
 the app was made using Ruby on Rails
