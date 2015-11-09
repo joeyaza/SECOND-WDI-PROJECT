@@ -21,6 +21,7 @@ user will be able to be 'inspired', ie find a random holiday destination
 
 <br>
 
+please see screenshoots hosted at http://imgur.com/a/njHsU
 
 
 the app was made using Ruby on Rails
