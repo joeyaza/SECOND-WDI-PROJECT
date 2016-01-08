@@ -1,6 +1,6 @@
 # SECOND-WDI-PROJECT
 
-H A P P Y 
+###H A P P Y 
 
 
 A pinterest / tumblr / flickr like photo app focused on travelling / holidays.
