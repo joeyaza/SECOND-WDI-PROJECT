@@ -11,12 +11,20 @@
 	background-size: cover;
 }
 
-
-
 .new-place-pic {
   font-weight: bold;
 }
 
+.show-place-pic {
+  font-family:'Clicker Script', cursive;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 0px;
+}
+
+.show-place {
+  text-transform: capitalize;
+}
 a, a:visited {
 	color: black;
 	text-decoration: none;
