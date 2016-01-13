@@ -1,9 +1,11 @@
 # SECOND-WDI-PROJECT
 
-H A P P Y 
+###H A P P Y 
 
 
 A pinterest / tumblr / flickr like photo app focused on travelling / holidays.
+
+The website is fully responsive to iPad and iPhone.
 
 The ethos of the app is for like minded people to come together and post pictures of travelling experiences they have enjoyed and others to come on the site and view there experiences.
 
