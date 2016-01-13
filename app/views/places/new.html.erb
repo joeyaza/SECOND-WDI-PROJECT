@@ -4,7 +4,7 @@
       <div class="area">
       <%= form_for(@pic, :html => { :class => "form-inline"} ) do |f| %>
 
-      <h2>New Pic</h2>
+      <h2 class="new-place-pic">New Pic</h2>
       <div class="form-group">
         <%= f.label :url %><br>
         <%= f.text_area :url, class: "form-control"  %>
@@ -34,7 +34,7 @@
 <div class="col-lg-6">
 <div class="area">
   <%= form_for(@place, :html => { :class => "form-inline"} ) do |f| %>
-  <h2>New Place</h2>
+  <h2 class="new-place-pic">New Place</h2>
 
   <div class="form-group">
     <%= f.label :country %><br>
